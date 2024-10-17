@@ -1,0 +1,53 @@
+{
+    "@context": {
+      "prov": "http://www.w3.org/ns/prov#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@id": "http://example.org/qualitative_research_project",
+    "@type": "prov:Entity",
+    "prov:label": "Interview Study on User Experience",
+    "prov:generatedAtTime": "2024-10-17T10:00:00Z",
+    "prov:wasGeneratedBy": {
+      "@type": "prov:Activity",
+      "prov:label": "Data Collection",
+      "prov:startedAtTime": "2024-10-01T09:00:00Z",
+      "prov:endedAtTime": "2024-10-15T17:00:00Z",
+      "prov:wasAssociatedWith": {
+        "@type": "prov:Agent",
+        "prov:label": "Dr. Jane Doe",
+        "prov:type": "prov:Person"
+      },
+      "prov:used": {
+        "@type": "prov:Entity",
+        "prov:label": "Interview Protocol",
+        "prov:wasDerivedFrom": {
+          "@type": "prov:Entity",
+          "prov:label": "Research Design",
+          "prov:wasAttributedTo": {
+            "@type": "prov:Agent",
+            "prov:label": "Research Team",
+            "prov:type": "prov:Organization"
+          }
+        }
+      }
+    },
+    "prov:wasAttributedTo": {
+      "@type": "prov:Agent",
+      "prov:label": "Researcher Team",
+      "prov:type": "prov:Organization"
+    },
+    "prov:wasDerivedFrom": {
+      "@type": "prov:Entity",
+      "prov:label": "Interview Transcripts",
+      "prov:wasGeneratedBy": {
+        "@type": "prov:Activity",
+        "prov:label": "Transcription",
+        "prov:wasAssociatedWith": {
+          "@type": "prov:Agent",
+          "prov:label": "Research Assistant",
+          "prov:type": "prov:Person"
+        }
+      }
+    }
+  }
+  
